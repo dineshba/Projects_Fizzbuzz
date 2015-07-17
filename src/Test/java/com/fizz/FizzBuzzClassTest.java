@@ -12,4 +12,11 @@ public class FizzBuzzClassTest {
         a=num.isChecking(3);
         assertEquals("Fizz",a);
     }
+
+    @Test
+    public void shouldReturnBuzzForNumber5() {
+        FizzBuzzClass num=new FizzBuzzClass();
+        a=num.isChecking(5);
+        assertEquals("Buzz",a);
+    }
 }
