@@ -19,4 +19,11 @@ public class FizzBuzzClassTest {
         a=num.isChecking(5);
         assertEquals("Buzz",a);
     }
+
+    @Test
+    public void shouldReturnFizzBuzzForNumber15() {
+        FizzBuzzClass num=new FizzBuzzClass();
+        a=num.isChecking(15);
+        assertEquals("FizzBuzz",a);
+    }
 }
