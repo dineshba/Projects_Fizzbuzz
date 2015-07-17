@@ -1,5 +1,7 @@
 package com.fizz;
 
+import java.util.Scanner;
+
 public class FizzBuzzClass {
 
     public String isChecking(int i) {
