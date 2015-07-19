@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <project name="FizzBuzz with JUnit" default="junitrun">
+    <property name="lib.dir" value="lib"/>
+    <path id="classpath">
+    <fileset dir="${lib.dir}" includes="junit-4.8.2.jar"/>
+    </path>
+    <target name="junitrun" depends="compile">
+        <junit printsummary="true" showoutput="true">
+            <test name="com.fizz.FizzBuzzClassTest"/>
+            <classpath>
+                <path refid="classpath"/>
+                <pathelement location="src/ANT"/>
+            </classpath>
+        </junit>
+    </target>
+    <target name="compile">
+        <javac srcdir="./src" destdir="./src/ANT" includeantruntime="false" classpath="lib/junit-4.8.2.jar"/>
+    </target>
+</project>
